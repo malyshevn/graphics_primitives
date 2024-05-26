@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "graphics-primitives"
+version = "0.1.0"
+description = ""
+authors = ["Никита Малышев <babyswisha@mail.ru>"]
+readme = "README.md"
+packages = [{include = "graphics_primitives"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tkinter = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.scripts]
+graphics_primitives_gui = "graphics_primitives.gui:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
